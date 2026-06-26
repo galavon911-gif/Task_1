@@ -29,9 +29,14 @@ public class BunParameterizedTest {
     }
 
     @Test
-    public void testBunFieldsWithParameters() {
+    public void testBunGetNameReturnsCorrectName() {
         Bun bun = new Bun(name, price);
         Assert.assertEquals(name, bun.getName());
+    }
+
+    @Test
+    public void testBunGetPriceReturnsCorrectPrice() {
+        Bun bun = new Bun(name, price);
         Assert.assertEquals(price, bun.getPrice(), 0.001);
     }
 }
